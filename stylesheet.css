@@ -1,0 +1,92 @@
+.topnav {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  color: white;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  background-color: #c6c2c2;
+  padding: 0.8em 0;
+}
+
+.topnav-nav {
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+nav a:hover,
+nav a:focus {
+  color: #afacaa;
+}
+
+
+nav ul {
+  list-style-type: none;
+  
+}
+
+nav li {
+  margin-left: 2em;
+ display: inline;
+}
+
+
+  @media (max-width: 640px) {
+    .container {
+      text-align: center;
+    }
+  
+    .container-nav {
+      flex-direction: row;
+    }
+  
+    nav ul {
+      flex-direction: row;
+    }
+  
+    nav li {
+      margin: 0.8em 0;
+    }
+  }
+
+#logo {
+  width: auto;
+  height: auto;
+}
+
+body {
+  background-color: #c6c2c2;
+  padding-top:12%;
+  font-size: 2em;
+}
+
+.title {
+color: #fff;
+  overflow:auto; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid  rgb(0, 247, 255); /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 20px; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .20em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(0, 247, 255) }
+}
